@@ -1,0 +1,83 @@
+/* Additional styles for homepage engagement enhancements */
+
+/* Animated text for banner */
+.animated-text {
+  display: inline-block;
+  animation: textFadeIn 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in effect */
+.fade-in {
+  opacity: 0;
+  animation: fadeInEffect 1.5s ease forwards;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInEffect {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Pulse animation for buttons */
+.pulse {
+  animation: pulseAnimation 2s infinite;
+}
+
+@keyframes pulseAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Hover animations for features and buttons */
+.hover-animate {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-animate:hover {
+  color: #9bf1ff !important;
+  transform: scale(1.1);
+}
+
+/* Scroll-triggered fade-in for sections */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Input focus animations */
+.input-animate {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.input-animate:focus {
+  box-shadow: 0 0 8px #9bf1ff;
+  border-color: #9bf1ff;
+  outline: none;
+}
