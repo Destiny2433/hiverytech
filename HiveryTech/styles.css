@@ -1,0 +1,56 @@
+* {
+ box-sizing: border-box;
+ margin: 0 auto;
+ padding: 0;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background: url(Screenshot_20241116-164821.jpg);
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: rgb(58, 35, 35);
+    border-radius: 20PX;
+    padding: 30PX;
+    margin: 20%;
+    transition: all 0.7s;
+}
+
+.container:hover {
+    transform: scale(1.5);
+}
+
+input {
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 10PX auto;
+    padding: 2%;
+    background-color: black;
+    transition: background-color 0.7s;
+
+}
+
+button {
+    border-radius: 20px;
+    width: 50%;
+    border: none;
+    margin: 10PX auto;
+    padding: 5%;
+    background-color: transparent;
+    transition: background-color 0.7s;   
+}
+
+input:hover, button:hover {
+    background-color: rgb(33, 1, 1);
+}
+h1 {
+    color: black;
+    text-align: center;
+
+}
